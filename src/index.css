@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-grayish-light;
+}
+
+.header {
+  @apply text-grayish-dark py-6 font-bold text-center tracking-wide;
+}
+
+.board {
+  @apply container m-auto max-w-2xl flex flex-col space-y-5 bg-white rounded-2xl p-6;
+}
+
+@media(min-width:768px) {
+  .board {
+    @apply flex-row space-y-0 space-x-5
+  }
+}
+
+input {
+  @apply font-bold text-right text-2xl;
+  @apply bg-grayish-veryLight text-dark rounded-md w-full h-8;
+}
+
+button {
+  @apply text-center font-bold m-1 p-2 rounded-md;
+}
+
+.buttonType1 {
+  @apply bg-dark text-white
+}
+
+.buttonType2 {
+  @apply bg-primary text-dark
+}
